@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="听见北京 — 一个以声音地图为核心的极简北京城市介绍网页">
+    <title>听见北京 / Beijing Between Axis and Breath</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700&family=Inter:wght@300;400;500&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<svg class="axis-line" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" aria-hidden="true">
+    <line x1="50%" y1="0" x2="50%" y2="100%" stroke="#8B2E2E" stroke-width="1" opacity="0.04"/>
+</svg>
+
+<nav class="nav" id="nav">
+    <span class="nav-brand">听见北京</span>
+    <span class="nav-progress" id="navProgress">探索进度 0/4</span>
+</nav>
+
+<main>
+
+<section class="hero" id="hero">
+    <div class="hero-inner">
+        <p class="hero-eyebrow">Beijing / Between Axis and Breath</p>
+        <h1 class="hero-title">听 见 北 京</h1>
+        <div class="hero-line"></div>
+        <p class="hero-desc">
+            一条中轴线，延展出古都的秩序；<br>
+            无数街巷与灯火，构成今天北京的呼吸。
+        </p>
+        <button class="hero-btn" id="startBtn" aria-label="开启声音体验">
+            <span class="hero-btn-text">开启声音体验</span>
+            <span class="hero-btn-arrow">→</span>
+        </button>
+        <p class="hero-hint" id="audioHint">点击后允许播放声音</p>
+    </div>
+    <div class="hero-scroll-hint">
+        <span>向下滚动</span>
+        <span class="scroll-arrow">↓</span>
+    </div>
+</section>
+
+<section class="section reveal" id="overview">
+    <div class="section-inner">
+        <div class="section-header">
+            <span class="section-num">01</span>
+            <h2 class="section-title">北京的坐标</h2>
+        </div>
+        <p class="section-lead">
+            北京是一座被时间层层叠加的城市。它既有古都的轴线、城门与礼制，也有地铁、写字楼和不断生成的新生活。
+        </p>
+        <div class="data-grid">
+            <div class="data-card">
+                <span class="data-number">3000+</span>
+                <span class="data-label">年建城史</span>
+                <p class="data-desc">从燕国蓟城到今日首都</p>
+            </div>
+            <div class="data-card">
+                <span class="data-number">800+</span>
+                <span class="data-label">年建都史</span>
+                <p class="data-desc">金、元、明、清的都城</p>
+            </div>
+            <div class="data-card">
+                <span class="data-number">首都</span>
+                <span class="data-label">政治中心</span>
+                <p class="data-desc">中华人民共和国首都</p>
+            </div>
+            <div class="data-card">
+                <span class="data-number">双核</span>
+                <span class="data-label">文化 · 科技</span>
+                <p class="data-desc">历史底蕴与创新的交汇</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section reveal" id="landmarks">
+    <div class="section-inner">
+        <div class="section-header">
+            <span class="section-num">02</span>
+            <h2 class="section-title">看见北京</h2>
+        </div>
+        <p class="section-lead">四座地标，四种时间的切片。</p>
+        <div class="landmark-grid">
+            <article class="landmark-card" data-sound="axis">
+                <div class="landmark-img-wrap">
+                    <img src="assets/images/forbidden-city.jpg" alt="故宫" loading="lazy">
+                </div>
+                <div class="landmark-info">
+                    <h3 class="landmark-name">故宫</h3>
+                    <p class="landmark-desc">红墙之内，时间像一层安静的回响。</p>
+                </div>
+            </article>
+            <article class="landmark-card" data-sound="axis">
+                <div class="landmark-img-wrap">
+                    <img src="assets/images/temple-of-heaven.jpg" alt="天坛" loading="lazy">
+                </div>
+                <div class="landmark-info">
+                    <h3 class="landmark-name">天坛</h3>
+                    <p class="landmark-desc">北京与天空之间，保留着古老的仪式感。</p>
+                </div>
+            </article>
+            <article class="landmark-card" data-sound="hutong">
+                <div class="landmark-img-wrap">
+                    <img src="assets/images/hutong.jpg" alt="胡同" loading="lazy">
+                </div>
+                <div class="landmark-info">
+                    <h3 class="landmark-name">胡同</h3>
+                    <p class="landmark-desc">真正的北京，常常藏在热闹背后的转角里。</p>
+                </div>
+            </article>
+            <article class="landmark-card" data-sound="city">
+                <div class="landmark-img-wrap">
+                    <img src="assets/images/cbd.jpg" alt="CBD" loading="lazy">
+                </div>
+                <div class="landmark-info">
+                    <h3 class="landmark-name">CBD</h3>
+                    <p class="landmark-desc">玻璃、速度与灯光，构成城市的未来表面。</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="section reveal" id="culture">
+    <div class="section-inner">
+        <div class="section-header">
+            <span class="section-num">03</span>
+            <h2 class="section-title">理解北京</h2>
+        </div>
+        <p class="section-lead">不写空泛的文化底蕴，只说三个关键词。</p>
+        <div class="culture-grid">
+            <div class="culture-item">
+                <span class="culture-num">01</span>
+                <h3 class="culture-keyword">秩序</h3>
+                <p class="culture-text">中轴线不只是城市结构，也是北京精神的一种可视化表达。从永定门到钟鼓楼，七点八公里的直线，串起了一座古都的礼制与呼吸。</p>
+            </div>
+            <div class="culture-item">
+                <span class="culture-num">02</span>
+                <h3 class="culture-keyword">包容</h3>
+                <p class="culture-text">不同口音、身份和梦想在这里相遇，塑造了今天的北京。胡同里的老住户、写字楼里的年轻人、来自各地的追梦者，都在这座城市找到自己的位置。</p>
+            </div>
+            <div class="culture-item">
+                <span class="culture-num">03</span>
+                <h3 class="culture-keyword">反差</h3>
+                <p class="culture-text">皇家建筑旁边可以是早餐铺，写字楼不远处也能转进老胡同。这种并置不是混乱，而是一座城市同时容纳不同时间层次的能力。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section reveal" id="food">
+    <div class="section-inner">
+        <div class="section-header">
+            <span class="section-num">04</span>
+            <h2 class="section-title">靠近北京</h2>
+        </div>
+        <p class="section-lead">北京的一天，从热气开始，在风声里慢下来。</p>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-time">
+                    <span class="time-hour">07:00</span>
+                    <span class="time-label">清晨</span>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-img-wrap">
+                        <img src="assets/images/food-breakfast.png" alt="豆汁焦圈" loading="lazy">
+                    </div>
+                    <p class="timeline-text">豆汁、焦圈、胡同口的早餐铺，城市在热气里醒来。</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-time">
+                    <span class="time-hour">12:30</span>
+                    <span class="time-label">午间</span>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-img-wrap">
+                        <img src="assets/images/food-dinner.jpg" alt="炸酱面" loading="lazy">
+                    </div>
+                    <p class="timeline-text">一碗炸酱面，简单、直接，也很北京。</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-time">
+                    <span class="time-hour">18:30</span>
+                    <span class="time-label">傍晚</span>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-img-wrap">
+                        <img src="assets/images/food-lunch.jpg" alt="铜锅涮肉" loading="lazy">
+                    </div>
+                    <p class="timeline-text">铜锅涮肉升起白雾，冬天的北京有了温度。</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-time">
+                    <span class="time-hour">22:00</span>
+                    <span class="time-label">夜晚</span>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-img-wrap">
+                        <img src="assets/images/houhai.jpg" alt="后海夜晚" loading="lazy">
+                    </div>
+                    <p class="timeline-text">后海的水声、街灯和晚风，让城市慢下来。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section reveal soundmap-section" id="soundmap">
+    <div class="section-inner">
+        <div class="section-header">
+            <span class="section-num">05</span>
+            <h2 class="section-title">声音地图</h2>
+            <p class="section-title-en">Sound Map of Beijing</p>
+        </div>
+        <p class="section-lead">
+            点击四个卡片，收集四种北京气质。<br>
+            用耳朵，听见一座城市的呼吸。
+        </p>
+
+        <div class="progress-bar-wrap">
+            <div class="progress-bar-track">
+                <div class="progress-bar-fill" id="progressFill"></div>
+            </div>
+            <span class="progress-text" id="progressText">探索进度 0/4</span>
+        </div>
+
+        <div class="soundmap-grid">
+            <article class="sound-card" data-sound="axis" data-name="中轴北京" tabindex="0" role="button">
+                <div class="sound-card-img-wrap">
+                    <img src="assets/images/bell-tower.jpg" alt="钟楼" loading="lazy">
+                    <button class="sound-card-play-btn" aria-label="播放或暂停" tabindex="-1">
+                        <svg class="icon-play" viewBox="0 0 24 24" width="20" height="20"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+                        <svg class="icon-pause" viewBox="0 0 24 24" width="20" height="20"><path d="M6 5h4v14H6zM14 5h4v14h-4z" fill="currentColor"/></svg>
+                    </button>
+                </div>
+                <div class="sound-card-inner">
+                    <span class="sound-card-num">01</span>
+                    <h3 class="sound-card-title">中轴北京</h3>
+                    <p class="sound-card-desc">故宫、中轴线、古都秩序</p>
+                    <p class="sound-card-audio">钟声 · 古都回响</p>
+                    <span class="sound-card-status">点击聆听</span>
+                </div>
+            </article>
+
+            <article class="sound-card" data-sound="hutong" data-name="胡同北京" tabindex="0" role="button">
+                <div class="sound-card-img-wrap">
+                    <img src="assets/images/map-hutong.png" alt="胡同" loading="lazy">
+                    <button class="sound-card-play-btn" aria-label="播放或暂停" tabindex="-1">
+                        <svg class="icon-play" viewBox="0 0 24 24" width="20" height="20"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+                        <svg class="icon-pause" viewBox="0 0 24 24" width="20" height="20"><path d="M6 5h4v14H6zM14 5h4v14h-4z" fill="currentColor"/></svg>
+                    </button>
+                </div>
+                <div class="sound-card-inner">
+                    <span class="sound-card-num">02</span>
+                    <h3 class="sound-card-title">胡同北京</h3>
+                    <p class="sound-card-desc">胡同、街巷、清晨生活</p>
+                    <p class="sound-card-audio">胡同深处 · 街巷人声</p>
+                    <span class="sound-card-status">点击聆听</span>
+                </div>
+            </article>
+
+            <article class="sound-card" data-sound="city" data-name="都市北京" tabindex="0" role="button">
+                <div class="sound-card-img-wrap">
+                    <img src="assets/images/map-subway.jpg" alt="地铁" loading="lazy">
+                    <button class="sound-card-play-btn" aria-label="播放或暂停" tabindex="-1">
+                        <svg class="icon-play" viewBox="0 0 24 24" width="20" height="20"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+                        <svg class="icon-pause" viewBox="0 0 24 24" width="20" height="20"><path d="M6 5h4v14H6zM14 5h4v14h-4z" fill="currentColor"/></svg>
+                    </button>
+                </div>
+                <div class="sound-card-inner">
+                    <span class="sound-card-num">03</span>
+                    <h3 class="sound-card-title">都市北京</h3>
+                    <p class="sound-card-desc">CBD、地铁、科技创新</p>
+                    <p class="sound-card-audio">地铁穿行 · 都市节奏</p>
+                    <span class="sound-card-status">点击聆听</span>
+                </div>
+            </article>
+
+            <article class="sound-card" data-sound="night" data-name="夜色北京" tabindex="0" role="button">
+                <div class="sound-card-img-wrap">
+                    <img src="assets/images/map-houhai.png" alt="后海夜景" loading="lazy">
+                    <button class="sound-card-play-btn" aria-label="播放或暂停" tabindex="-1">
+                        <svg class="icon-play" viewBox="0 0 24 24" width="20" height="20"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+                        <svg class="icon-pause" viewBox="0 0 24 24" width="20" height="20"><path d="M6 5h4v14H6zM14 5h4v14h-4z" fill="currentColor"/></svg>
+                    </button>
+                </div>
+                <div class="sound-card-inner">
+                    <span class="sound-card-num">04</span>
+                    <h3 class="sound-card-title">夜色北京</h3>
+                    <p class="sound-card-desc">后海、酒吧街、人间烟火</p>
+                    <p class="sound-card-audio">人声鼎沸 · 音乐流转 · 后海夜生活</p>
+                    <span class="sound-card-status">点击聆听</span>
+                </div>
+            </article>
+        </div>
+
+        <div class="sound-feedback" id="soundFeedback" aria-live="polite"></div>
+
+        <div class="sound-complete" id="soundComplete">
+            <div class="sound-complete-line"></div>
+            <p class="sound-complete-text">
+                你已听见一个更完整的北京。<br>
+                它不只有宏大，也有细小而真实的温度。
+            </p>
+            <div class="sound-complete-line"></div>
+        </div>
+    </div>
+</section>
+
+<section class="section reveal" id="future">
+    <div class="section-inner future-inner">
+        <p class="future-text">
+            如果你还没来过北京，<br>
+            愿这座城市先以声音和光影与你相遇。
+        </p>
+        <p class="future-text">
+            如果你已经来过，<br>
+            也希望你记得它不只有宏大，<br>
+            还有耳边真实的响度 与万千回忆。
+        </p>
+        <div class="future-signature">
+            <span class="future-name">听见北京</span>
+            <span class="future-sub">Beijing Between Axis and Breath</span>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <p>听见北京 · 2026.07.11</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

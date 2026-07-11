@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#E8E2D5"/>
+  <rect x="0" y="380" width="800" height="220" fill="#C7B89A" opacity="0.5"/>
+  <rect x="120" y="180" width="180" height="280" fill="#8B2E2E" opacity="0.35"/>
+  <rect x="340" y="140" width="140" height="320" fill="#6B2222" opacity="0.3"/>
+  <rect x="520" y="200" width="160" height="260" fill="#8B2E2E" opacity="0.28"/>
+  <polygon points="120,180 210,120 300,180" fill="#5A1E1E" opacity="0.3"/>
+  <polygon points="340,140 410,90 480,140" fill="#4A1818" opacity="0.25"/>
+  <polygon points="520,200 600,150 680,200" fill="#5A1E1E" opacity="0.25"/>
+  <rect x="0" y="0" width="800" height="600" fill="#F6F3EE" opacity="0.15"/>
+  <text x="400" y="540" text-anchor="middle" font-family="serif" font-size="18" fill="#8B2E2E" opacity="0.4" letter-spacing="4">故 宫</text>
+</svg>

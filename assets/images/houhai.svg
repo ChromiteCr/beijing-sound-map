@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#E8E2D5"/>
+  <path d="M 0 350 Q 200 300 400 350 T 800 350 L 800 600 L 0 600 Z" fill="#6B8A9E" opacity="0.25"/>
+  <path d="M 0 400 Q 200 360 400 400 T 800 400 L 800 600 L 0 600 Z" fill="#4A6B85" opacity="0.2"/>
+  <ellipse cx="600" cy="180" rx="40" ry="30" fill="#B89B5E" opacity="0.15"/>
+  <ellipse cx="620" cy="170" rx="50" ry="35" fill="#B89B5E" opacity="0.1"/>
+  <rect x="200" y="280" width="8" height="80" fill="#444" opacity="0.2"/>
+  <rect x="350" y="300" width="6" height="60" fill="#444" opacity="0.15"/>
+  <text x="400" y="540" text-anchor="middle" font-family="serif" font-size="18" fill="#8B2E2E" opacity="0.4" letter-spacing="4">后 海</text>
+</svg>

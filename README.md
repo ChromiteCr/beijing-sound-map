@@ -44,20 +44,6 @@ beijing-sound-map/
 └── .impeccable.md          # 设计上下文
 ```
 
-## 图片替换说明
-
-当前使用 SVG 占位图，可替换为自摄照片：
-1. 将照片放入 `assets/images/` 目录
-2. 修改 `index.html` 中对应 `<img>` 标签的 `src` 属性
-3. 建议图片尺寸：800×600，格式 JPG/WebP
-
-## 部署到 GitHub Pages
-
-1. 将项目推送到 GitHub 仓库
-2. 进入仓库 Settings → Pages
-3. Source 选择 main branch / root
-4. 等待生成 GitHub Pages 链接
-
 ## WorkBuddy 协作
 
 本项目使用 WorkBuddy (GLM-5.2) 作为 AI 开发伙伴完成，协作过程涵盖：
